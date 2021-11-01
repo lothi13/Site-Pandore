@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+@font-face{
+  font-family: "balgruf";
+  src: url("./Balgruf.otf") format("woff"),
+    url("./Balgruf_Italic.otf") format("woff2")
+}
+h1{
+  text-align: center;
+  font-family: "balgruf";
+  padding-top: 25px;
+  color: darkred;
+}
+
+h2 {
+    text-align: center;
+    font-family: "balgruf";
+    padding: 10px 0;
+    color: darkred;
+}
+
+h3 {
+  font-family: "balgruf";
+  margin-left: 15px;
+  color: darkred;
+}
+
+body {
+  width: 700px;
+  line-height: 150%;
+  margin: auto;
+  background-image: url('./Pandore.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    padding-top:50px;
+}
+
+
+p{
+  text-indent:12px;
+  margin: 20px;
+}
+
+.nom{
+  color: blueviolet;
+  font-weight: bold;
+  font-family: "balgruf";
+}
+
+#pandore{
+  position: fixed;
+  bottom: 10px;
+  right: 35px;
+}
+
+
+.fond{
+  background: rgba(57, 229, 63, 0.80);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-family: "Oswald";
+}
+
+li{
+  margin-left: 25px;
+}
+
+li li{
+  margin-left: -5px;
+}
+
+a:hover {
+  color: darkred;
+
+}
+a {
+  text-decoration: none;
+  color: #blueviolet;
+}
+
+
+/*                                      */
+#menuContainer{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+#menu{
+    position:absolute;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    width:550px;
+    cursor:pointer;
+    top:0;
+}
+.menuElmt, .submenuTitle, .subSubmenuTitle, .subsubSubmenuTitle{
+  padding: 5px;
+  background: rgba(57, 229, 63, 0.80);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-family: "Oswald";
+}
+.subSubmenu{
+    display:flex;
+    width:200%;
+    position:relative;
+}
+
+.submenu > div:not(.subSubmenu){
+    width:100%;
+}
+
+.subSubmenu > div:not(.subSubmenuTitle){
+    position:absolute;
+    right:-15px;
+    display:flex;
+    flex-direction:column;
+}
+
+.subSubmenuTitle{
+    width:100%;
+    display:inline;
+}
+
+.submenu div:not(.submenuTitle){
+    display:none;
+}
+
+.submenu:hover div:not(.submenuTitle){
+    display:flex;
+}
+
+.subSubmenu > div:not(.subSubmenuTitle) > .menuElmt {
+    display:none;
+}
+
+.subSubmenu:hover > div:not(.subSubmenuTitle) > .menuElmt {
+    display:block;
+    
+}
+
+.subSubmenu:not(:hover) .subSubmenuTitle{
+    width:calc(100% + 10px);
+}
+
+.subSubmenu:not(:hover){
+    display:block !important;
+    width:calc(100% - 10px);
+}
+/* sous sous sous menus */
+.subsubSubmenu{
+    display:flex;
+    width:200%;
+    position:relative;
+}
+
+.subSubmenu > div:not(.subsubSubmenu){
+    width:100%;
+}
+
+.subsubSubmenu > div:not(.subsubSubmenuTitle){
+    position:absolute;
+    right:-15px;
+    display:flex;
+    flex-direction:column;
+}
+
+.subsubSubmenuTitle{
+    width:100%;
+    display:inline;
+}
+
+.subsubSubmenu > div:not(.subsubSubmenuTitle) > .menuElmt {
+    display:none;
+}
+
+.subsubSubmenu:hover > div:not(.subsubSubmenuTitle) > .menuElmt {
+    display:block;
+    
+}
+
+.subsubSubmenu:not(:hover) .subsubSubmenuTitle{
+    width:calc(100% + 10px);
+}
+
+.subsubSubmenu:not(:hover){
+    display:block !important;
+    width:calc(100% - 10px);
+}
