@@ -1,0 +1,23 @@
+
+
+
+canvas{
+    border:1px solid black;
+}
+
+aside, article{
+    display: flex;
+    flex-direction: row;
+}
+
+aside div, article p{
+    border:1px solid black;
+    margin: 5px;
+    text-align: justify;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+aside div{
+    width: 50%;
+}

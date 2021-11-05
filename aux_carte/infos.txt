@@ -1,0 +1,3 @@
+Taille de l'image initial : 1296 X 658
+Taille de l'image intermediaire : 900 X 457
+Taille de l'image petite : 600 X 303
